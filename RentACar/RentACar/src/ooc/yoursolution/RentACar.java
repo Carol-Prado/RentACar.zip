@@ -5,6 +5,7 @@
  */
 package ooc.yoursolution;
 
+import java.util.ArrayList;
 import java.util.List;
 import ooc.enums.Make;
 import ooc.enums.Month;
@@ -14,6 +15,7 @@ import ooc.enums.Month;
  * @author Amanda Lima
  */
 public class RentACar implements RentACarInterface{
+    
 
     @Override
     public List<CarInterface> getCars() {

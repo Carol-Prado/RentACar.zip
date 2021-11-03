@@ -7,6 +7,7 @@ package ooc.yoursolution;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import ooc.enums.Make;
 
 /**
  *
@@ -16,7 +17,28 @@ public class BookingSystem implements BookingSystemInterface{
 
     @Override
     public RentACarInterface setupRentACar(BufferedReader in) throws IOException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    //To change body of generated methods, choose Tools | Templates.
+        String inventory = in.readLine();
+                       
+        RentACarInterface RentACar = new RentACar();
+        Make make;
+        brands = make.
+       
+        while(inventory != null){
+            if(inventory.contentEquals(Make.values())){
+                
+            }
+            
+            inventory = in.readLine();        
+            
+            RentACar.
+            
+            title = in.readLine();
+            
+        
+        }
+       
+        return RentACar;
     }
     
 }
