@@ -18,8 +18,9 @@ public class Car implements CarInterface {
     
     private Make make;
     private Month days;
-      
     
+   
+
 
     @Override
     public Map<Month, boolean[]> createAvailability() {
@@ -41,6 +42,7 @@ public class Car implements CarInterface {
     @Override
     public Make getMake() {
         return this.make;
+        
     }
 
     @Override
@@ -74,13 +76,20 @@ public class Car implements CarInterface {
 
     @Override
     public int getId() {
-        return 0;
+        return this.getId();
+        
         
     }
 
     @Override
     public boolean isAvailable(Month month, int day) {
+       
+   
+
         boolean isAvailable = this.isAvailable(month, day);
+         if (isAvailable==false){
+             
+         }
         
         return true;
         
@@ -88,11 +97,11 @@ public class Car implements CarInterface {
 
     @Override
     public boolean book(Month month, int day) {
-        boolean book = this.book(month, day);
-        if(book==true){
+        boolean book = this.isAvailable(month, day);
+        if(book==false){
             
         }
-        return false;
+        return true;
               
     }
     
