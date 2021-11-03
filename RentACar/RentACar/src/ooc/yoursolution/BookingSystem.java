@@ -7,6 +7,7 @@ package ooc.yoursolution;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.List;
 import ooc.enums.Make;
 
 /**
@@ -21,21 +22,23 @@ public class BookingSystem implements BookingSystemInterface{
         String inventory = in.readLine();
                        
         RentACarInterface RentACar = new RentACar();
-        Make make;
-        brands = make.
-       
-        while(inventory != null){
-            if(inventory.contentEquals(Make.values())){
+        List<CarInterface> cars;
+        
+        while(inventory != null){    
+            if(inventory.contains(":")){
+                int index = inventory.indexOf(":");
+                String maker = inventory.substring(index);
+                cars.add(maker);
+                RentACar.setCars(cars);
                 
             }
+            else{
+                RentACar.setName(inventory);
+            }
+     
             
             inventory = in.readLine();        
             
-            RentACar.
-            
-            title = in.readLine();
-            
-        
         }
        
         return RentACar;

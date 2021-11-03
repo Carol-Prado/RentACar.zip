@@ -25,7 +25,7 @@ public class RentACar implements RentACarInterface{
 
     @Override
     public void setCars(List<CarInterface> cars) {
-       ; //To change body of generated methods, choose Tools | Templates.
+        //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
